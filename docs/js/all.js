@@ -1,18 +1,19 @@
 (function () {
 
-    let mountains = [
-        { name: "Monte Falco", height: 1658, place: "Parco Foreste Casentinesi" },
-        { name: "Monte Falterona", height: 1654, place: "Parco Foreste Casentinesi" },
-        { name: "Poggio Scali", height: 1520, place: "Parco Foreste Casentinesi" },
-        { name: "Pratomagno", height: 1592, place: "Parco Foreste Casentinesi" },
-        { name: "Monte Amiata", height: 1738, place: "Siena" }
+    let cities = [
+        { city: "Washington D.C", population: 702455, country: "United States" },
+        { city: "Paris", population: 2148271 , country: "France" },
+        { city: "Brasilia", population: 4235000, country: "Brazil" },
+        { city: "Rome", population: 2879728, country: "Italy" },
+        { city: "London", population: 8173941, country: "England" }
     ];
 
+
     let table = document.querySelector("table");
-    let TableHeadings = Object.keys(mountains[0]);
+    let TableHeadings = Object.keys(cities[0]);
     table.classList.add("table")
     generateTableHead(table, TableHeadings);
-    generateTable(table, mountains);
+    generateTable(table, cities);
 
 })();
 
